@@ -13,7 +13,7 @@ body {
   color: #333;
 }
 
-/* Header */
+
 header {
   background-color: #333;
   color: #fff;
@@ -27,30 +27,32 @@ header {
 header h1 {
   margin: 0;
   font-size: 1rem;
+  padding-left: 20px; /* adjust this value as needed */
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin: 0 1rem;
+nav {
+  background-color: #333;
+  overflow: hidden;
 }
 
 nav a {
-  color: #fff;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  font-size: 17px;
 }
 
 nav a:hover {
-  color: #ddd;
+  background-color: #ddd;
+  color: black;
 }
 
+nav a.active {
+  background-color: #0bd5f0;
+  color: white;
+}
 /* Main content area */
 main {
   margin: 1rem;
